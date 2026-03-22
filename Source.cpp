@@ -1583,7 +1583,6 @@ void Login()
 
 }
 int main() {
-	// هذا الجزء سيقوم بإنشاء الملف في المكان الذي يريده البرنامج بالضبط
 	fstream MyFile;
 	MyFile.open("Users.txt", ios::out);
 	if (MyFile.is_open()) {
@@ -1591,7 +1590,7 @@ int main() {
 		MyFile.close();
 	}
 
-	// الآن جرب الدخول
+
 	Login();
 	return 0;
 }
